@@ -63,25 +63,29 @@ public class LimitedTextField extends TextField{
 	}
 
 
+	//Getter y Setter para el límite de caracteres
 	public int getNumColumns() {
 		return numColumns.get();
 	}
 	
-	public Color getLimitColor() {
-		return limitColor.get();
-	}
-
-	private void setNumColumns(int limit) {
+	public void setNumColumns(int limit) {
 		this.numColumns.set(limit);
 	}
 	
 	
-	private void setLimitColor(Color color) {
-		this.limitColor.set(color);
-	}
-	
 	public IntegerProperty numColumnsProperty() {
 		return numColumns;
 	}
+
+	//Getter y Setter para el color
+	public Color getLimitColor() {
+		return limitColor.get();
+	}
+	
+	public void setLimitColor(Color color) {
+		this.limitColor.set(color);
+	}
+	
+
 	
 }
