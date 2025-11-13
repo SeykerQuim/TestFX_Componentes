@@ -16,12 +16,11 @@ public class Main extends Application {
 			LimitedTextField limitado = new LimitedTextField();
 
 			// Usamos VBox y agregamos componente
-			VBox root = new VBox();
-			root.getChildren().addAll(limitado);
-			Scene scene = new Scene(root,450,150);
+			VBox root = new VBox(10, limitado);
+			root.setStyle("-fx-padding:20; -fx-alignment: center;");
+			Scene scene = new Scene(root,400,200);
 			
 			// Configurar el escenario
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setTitle("Prueba Componente Contraseña Validada");
 			primaryStage.setScene(scene);
 			primaryStage.show();

@@ -13,13 +13,14 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.geometry.Insets;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 
-public class LimitedTextField extends TextField{
+public class ValidadorContrassenya extends PasswordField{
 	
 	// Esta indica el límite de caracteres
 	private final IntegerProperty numColumns = new SimpleIntegerProperty(10);
@@ -32,7 +33,7 @@ public class LimitedTextField extends TextField{
 	
 	
 	//Constructores
-	public LimitedTextField() {
+	public ValidadorContrassenya() {
 		super();
 		initialize();
 	}
@@ -42,7 +43,7 @@ public class LimitedTextField extends TextField{
 	 * @param numColumns
 	 * @param limitColor
 	 */
-	public LimitedTextField(int numColumns, Color limitColor, Color limitTextColor) {
+	public ValidadorContrassenya(int numColumns, Color limitColor, Color limitTextColor) {
 		super();
 		setNumColumns(numColumns);
 		setLimitColor(limitColor);
