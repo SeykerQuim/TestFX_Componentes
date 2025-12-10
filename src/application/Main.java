@@ -2,6 +2,8 @@ package application;
 	
 import javafx.application.Application;
 import javafx.stage.Stage;
+import module.ComponenteIdentificador;
+import module.ComponenteIdentificadorSimple;
 import module.LimitedTextField;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
@@ -13,10 +15,12 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			// Creamos un objeto de LimitedTextField
-			LimitedTextField limitado = new LimitedTextField();
+//			LimitedTextField limitado = new LimitedTextField();
+			ComponenteIdentificador componente = new ComponenteIdentificador();
+			ComponenteIdentificadorSimple simple = new ComponenteIdentificadorSimple();
 
 			// Usamos VBox y agregamos componente
-			VBox root = new VBox(10, limitado);
+			VBox root = new VBox(10, simple);
 			root.setStyle("-fx-padding:20; -fx-alignment: center;");
 			Scene scene = new Scene(root,400,200);
 			
