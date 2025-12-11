@@ -1,0 +1,38 @@
+.label {
+    -fx-font-size: 11.0pt;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+   
+}
+
+.text-field {
+    -fx-font-size: 12.0pt;
+}
+
+
+#etiqueta{
+	-fx-font-size: 11.0pt;
+    -fx-text-fill: navy;
+    -fx-font-weight: bold;
+}
+
+#peso{
+	-fx-background-color:yellow;
+}
+
+
+.slider .track {
+    -fx-background-color: lightgray;
+}
+
+.slider .thumb {
+    -fx-background-color: #0078D7; /* azul */
+}
+
+.slider .tick-mark {
+    -fx-stroke: navy;
+}
+
+.slider .tick-label {
+    -fx-text-fill: red;
+}
